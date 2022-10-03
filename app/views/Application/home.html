@@ -1,0 +1,22 @@
+#{extends 'main.html' /}
+
+#{form @Application.login(), id:'formhome'}
+
+  <p>
+    <label for="email">Email: </label>
+    <input type="email" name="email" id="email" value="${params.email}" />
+  </p>
+  <p>
+    <label for="password">Password: </label>
+    <input type="password" name="password" id="password" value="${params.password}" />
+  </p>
+  <p class="buttons">
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </p>
+
+#{/form}
+
+<p class="footer">
+  <a href="@{Application.signup()}">Register</a> if you are a new user.
+</p>

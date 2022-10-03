@@ -1,0 +1,59 @@
+html {
+	margin: 100;
+	padding: 100;
+	background: gray;
+	font-family: 'Lucida Grande','Trebuchet MS',Arial,Helvetica,sans-serif;
+	font-size: 100%;
+	background-image: url("/public/images/tree.jpg");
+}
+
+body {
+    width: 700px;
+    margin: 100px auto;
+    font-family: Arial;
+    font-size: 120%;
+    color: rgb(54, 47, 45);
+    background: Azure;
+    padding: 50px;
+    -webkit-border-radius: 8px;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.2);
+    -moz-border-radius: 8px;
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+
+.fError, .fSuccess {
+    text-align: center;
+    color: red;
+    top: -100px;
+}
+
+#header {
+    position: relative;
+    color: darkblue;
+    text-align: center;
+}
+
+.footer {
+    padding: 10px;
+    font-size: 90%;
+    border-top: 5px dotted #ccc;
+    text-align: center;
+}
+
+.legend {
+    color: darkblue;
+}
+
+#formhome p {
+    clear: both;
+    text-align: center;
+    margin: 12px 10px;
+    min-height: 20px;
+}
+
+.fieldset {
+    font-size: 200%;
+    padding: 10px;
+    font-family: Cursive;
+    text-shadow: 0.8px 0.8px;
+}
