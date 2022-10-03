@@ -3,8 +3,6 @@ package models;
 import play.data.validation.*;
 import play.db.jpa.Model;
 import javax.persistence.*;
-import java.util.Calendar;
-import java.sql.Date;
 
 @Entity
 public class User extends Model {
@@ -23,7 +21,7 @@ public class User extends Model {
 
     @Required
     @Email
-    @Column(name = "Email")
+    @Column(unique = true)
     public String email;
 
     @Required
