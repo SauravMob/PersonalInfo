@@ -2,33 +2,36 @@
 
 <html>
     <head>
-        <title>#{get 'title' /}</title>
+        <title>Personal Info</title>
         <meta charset="${_response_encoding}">
         <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
         #{get 'moreStyles' /}
         <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
-        <link rel="stylesheet" type="image/jpg" href="@{'/public/images/tree.jpg'}">
     </head>
     <body>
 
-    <h3 id="header">Good Morning, And welcome to the play!!!</h3>
-    <hr>
+    #{if flash.error}
+    <h3 class="fError">
+        <strong>${flash.error}</strong>
+    </h3>
+    #{/if}
 
     #{if flash.success}
-    <p class="fSuccess">
+    <h3 class="fSuccess">
         <strong>${flash.success}</strong>
-    </p>
+    </h3>
     #{/if}
 
-    #{if flash.error}
-    <p class="fError">
-        <strong>${flash.error}</strong>
+    <p class="admin">
+        <a href="@{Application.secure()}">Admin</a>
     </p>
-    #{/if}
+    <hr>
+
+    <h2 class="main">WELCOME TO PLAY APP</h2>
+
+    <hr>
 
         #{doLayout /}
-        
-        <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
-        #{get 'moreScripts' /}
+
     </body>
 </html>

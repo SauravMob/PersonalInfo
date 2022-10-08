@@ -11,22 +11,25 @@
                 <content url="file:///usr/opt/modules/docviewer">
             <sourceFolder url="file:///usr/opt/modules/docviewer/app" isTestSource="false" />
         </content>
+        <content url="file:///usr/opt/modules/crud">
+            <sourceFolder url="file:///usr/opt/modules/crud/app" isTestSource="false" />
+        </content>
 
         <orderEntry type="inheritedJdk" />
         <orderEntry type="module-library">
             <library name="Project Libraries">
                 <CLASSES>
                     <root url="file://$MODULE_DIR$/lib" />
-                    <root url="file://$MODULE_DIR$/../../../usr/opt/modules/docviewer/lib"/>
+                    <root url="file://$MODULE_DIR$/../../../../usr/opt/modules/docviewer/lib"/>
 
                 </CLASSES>
                 <JAVADOC />
                 <SOURCES>
-                                        <root url="file://$MODULE_DIR$/../../../usr/opt/modules/docviewer/src"/>
+                                        <root url="file://$MODULE_DIR$/../../../../usr/opt/modules/docviewer/src"/>
 
                 </SOURCES>
                 <jarDirectory url="file://$MODULE_DIR$/lib" recursive="false" />
-                                <jarDirectory url="file://$MODULE_DIR$/../../../usr/opt/modules/docviewer/lib" recursive="false"/>
+                                <jarDirectory url="file://$MODULE_DIR$/../../../../usr/opt/modules/docviewer/lib" recursive="false"/>
 
             </library>
         </orderEntry>

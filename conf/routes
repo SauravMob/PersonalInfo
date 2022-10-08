@@ -4,16 +4,24 @@
 
 # Home page
 GET     /                                       Application.home
+GET     /captcha                                Application.captcha
 GET     /signup                                 Application.signup
-POST    /submit                                 Application.register
+POST    /register                               Application.register
 GET     /home                                   Application.home
-GET     /{email}                                Application.login
+GET     /login/{email}                          Application.login
+DELETE  /delete/{email}                         Application.delete
+GET     /logout                                 Application.logout
+GET     /iterations                             Application.iterations
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
 
 # Map static resources from the /app/public folder to the /public path
 GET     /public/                                staticDir:public
+
+# Import CRUD routes
+GET     /admin/?                                Application.secure
+*       /admin/admin                                  module:crud
 
 # Catch all
 *       /{controller}/{action}                  {controller}.{action}

@@ -1,11 +1,17 @@
 package models;
 
 import play.data.validation.*;
-import play.db.jpa.Model;
+import play.db.jpa.GenericModel;
 import javax.persistence.*;
 
 @Entity
-public class User extends Model {
+@Table(name = "user")
+public class User extends GenericModel
+{
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    public Long Id;
 
     @Required
     @Column(name = "Name")
@@ -26,15 +32,18 @@ public class User extends Model {
 
     @Required
     @Column(name = "Password")
-    @Min(5)
     public String password;
 
-    public User(String fullname, String gender, String DOB, String email, String password) {
+    public User(Long Id, String fullname, String gender, String DOB, String email, String password)
+    {
         this.fullname = fullname;
         this.gender = gender;
         this.DOB = DOB;
         this.email = email;
         this.password = password;
-        create();
+    }
+
+    public String toString() {
+        return fullname;
     }
 }

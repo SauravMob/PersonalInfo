@@ -1,0 +1,35 @@
+#{extends 'index.html' /}
+<br>
+<h2 class="rights"><u>Please login for getting Admin rights</u></h2>
+
+#{form @Application.authenticate(), id:'formauthenticate'}
+
+<table class="secureform">
+    <tr>
+        <td>
+            <label for="email">Email: </label>
+        </td>
+        <td>
+            <input type="email" name="email" id="email" value="${params.email}" />
+            <span class="error">#{error 'email'/}</span>
+        </td>
+    </tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr>
+        <td>
+            <label for="password">Password: </label>
+        </td>
+        <td>
+            <input type="password" name="password" id="password" value="${params.password}" />
+            <span class="error">#{error 'password'/}</span>
+        </td>
+    </tr>
+</table>
+<p class="rights">
+    <input type="submit" value="Log In">
+    <input type="reset" value="Cancel">
+</p>
+
+#{/form}

@@ -2,6 +2,66 @@
 
 #{form @Application.login(), id:'formhome'}
 
+<<<<<<< HEAD
+<table>
+  <tr>
+    <td>
+      <label for="email">Email: </label>
+    </td>
+    <td>
+      <input type="email" name="email" id="email" value="${params.email}" />
+      <span class="error">#{error 'email'/}</span>
+    </td>
+  </tr>
+
+  <tr></tr>
+
+  <tr>
+    <td>
+      <label for="password">Password: </label>
+    </td>
+    <td>
+      <input type="password" name="password" id="password" value="${params.password}" />
+      <span class="error">#{error 'password'/}</span>
+    </td>
+  </tr>
+
+  <tr></tr>
+
+  <tr>
+    <td>
+
+    </td>
+    <td>
+      <img src="@{Application.captcha(randomID)}" />
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <label for="code">Verification: </label>
+    </td>
+    <td>
+      <input type="text" name="code" id="code" value="${params.code}" />
+      <span class="error">#{error 'code'/}</span>
+    </td>
+    <td>
+      <input type="hidden" name="randomID" value="${randomID}" />
+    </td>
+  </tr>
+
+  <tr></tr>
+  <tr></tr>
+
+  <tr>
+    <td class="buttons">
+      <input type="submit" value="Log In">
+      <input type="reset" value="Cancel">
+    </td>
+  </tr>
+
+</table>
+=======
   <p>
     <label for="email">Email: </label>
     <input type="email" name="email" id="email" value="${params.email}" />
@@ -14,6 +74,7 @@
     <input type="submit" value="Submit">
     <input type="reset" value="Cancel">
   </p>
+>>>>>>> ba735bd26107ec1ac871a79ad3dd5a73151a5b20
 
 #{/form}
 

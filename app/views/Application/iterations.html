@@ -1,0 +1,9 @@
+#{extends 'main.html' /}
+
+<h2>List of students are as follows: </h2>
+
+#{list items:user, as:'alluser'}
+<li type="square" class="users">
+    ${alluser.fullname}
+</li>
+#{/list}

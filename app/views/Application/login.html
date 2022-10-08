@@ -1,7 +1,21 @@
 #{extends 'main.html' /}
+
 <fieldset class="fieldset">
     <div>${user.fullname}</div>
+</fieldset>
+
+<fieldset class="fieldset">
     <div>${user.email}</div>
+</fieldset>
+
+<fieldset class="fieldset">
     <div>${user.DOB}</div>
+</fieldset>
+
+<fieldset class="fieldset">
     <div>${user.gender}</div>
 </fieldset>
+<br>
+
+<a href="@{Application.logout}">Logout</a>
+<a href="@{Application.delete(user.Id)}">Delete</a>
