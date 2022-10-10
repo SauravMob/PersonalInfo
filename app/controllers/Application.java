@@ -5,14 +5,6 @@ import play.data.validation.MinSize;
 import play.data.validation.Required;
 import play.libs.*;
 import play.mvc.*;
-<<<<<<< HEAD
-=======
-
-import java.sql.Date;
-import java.util.*;
-import java.util.concurrent.ExecutionException;
-
->>>>>>> ba735bd26107ec1ac871a79ad3dd5a73151a5b20
 import models.*;
 
 import java.util.List;
@@ -43,7 +35,6 @@ public class Application extends Controller
             @Required(message = "Email is required") String email,
             @MinSize(value = 5, message = "At least 5 character is required")
             @Required(message = "Password is required") String password,
-<<<<<<< HEAD
             @Required(message = "Verify password") String password2)
     {
         validation.equals(password2, password).message("Password must be same");
@@ -65,28 +56,11 @@ public class Application extends Controller
                 flash.error("Email already exists");
                 render("Application/signup.html");
             }
-=======
-            @Required(message = "Verify password") String password2) {
-        validation.equals(password2, password).message("Password verified");
-
-        if (validation.hasErrors()){
-            render("Application/signup.html");
-        }
-        try {
-            User user = new User(fullname, Gender, DOB, email, password);
-            flash.success("Welcome!! " + user.fullname);
-            home();
-        }
-        catch (Exception e) {
-            flash.error("Email is duplicate");
-            render("Application/signup.html");
->>>>>>> ba735bd26107ec1ac871a79ad3dd5a73151a5b20
         }
     }
 
     public static void login(
             @Required(message = "Email is required") String email,
-<<<<<<< HEAD
             @Required(message = "Password is required") String password,
             @Required(message = "Enter the code") String code,
             String randomID)
@@ -101,10 +75,6 @@ public class Application extends Controller
             flash.error("Incorrect captcha");
             home();
         }
-=======
-            @Required(message = "Password is required") String password) {
-
->>>>>>> ba735bd26107ec1ac871a79ad3dd5a73151a5b20
         User user = User.find("byEmailAndPassword", email, password).first();
         if (user != null)
         {

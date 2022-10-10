@@ -5,13 +5,20 @@
 <<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/PersonalInfo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalInfo.iml" afterDir="false" />
 =======
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/PersonalInfo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalInfo.iml" afterDir="false" />
+=======
 >>>>>>> ba735bd26107ec1ac871a79ad3dd5a73151a5b20
+>>>>>>> origin/main
       <change beforePath="$PROJECT_DIR$/PersonalInfo.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalInfo.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PersonalInfo.iws" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalInfo.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/Application/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/Application/home.html" afterDir="false" />
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/main
       <change beforePath="$PROJECT_DIR$/app/views/Application/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/Application/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/Application/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/Application/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/Application/signup.html" afterDir="false" />
@@ -26,10 +33,13 @@
       <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_main.html" afterDir="false" />
+<<<<<<< HEAD
+=======
 =======
       <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_home.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_signup.html" afterDir="false" />
 >>>>>>> ba735bd26107ec1ac871a79ad3dd5a73151a5b20
+>>>>>>> origin/main
       <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Application" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Application" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.User" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/models.User" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/classes/controllers/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/controllers/Application.class" afterDir="false" />
@@ -60,8 +70,14 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
 =======
+<<<<<<< HEAD
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+=======
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
 >>>>>>> ba735bd26107ec1ac871a79ad3dd5a73151a5b20
+>>>>>>> origin/main
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -74,8 +90,12 @@
 <<<<<<< HEAD
     "last_opened_file_path": "/home/saurav/Play projects/UserDetails-master (1)/UserDetails-master/UserDetails.ipr"
 =======
+<<<<<<< HEAD
+    "last_opened_file_path": "/home/saurav/Play projects/UserDetails-master (1)/UserDetails-master/UserDetails.ipr"
+=======
     "last_opened_file_path": "/home/saurav/Play projects/PersonalInfo/PersonalInfo.ipr"
 >>>>>>> ba735bd26107ec1ac871a79ad3dd5a73151a5b20
+>>>>>>> origin/main
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

@@ -3,14 +3,13 @@ html {
 }
 
 body {
-    height: 500px;
-    width: 700px;
+    height: 520px;
+    width: 650px;
     margin: 100px auto;
-    font-family: Arial;
     font-size: 120%;
-    color: rgb(54, 47, 45);
-    background: Azure;
+    background: radial-gradient(circle, #f869d5, #5650de);
     padding: 20px;
+    border-radius: 30px;
 }
 
 .fError, .fSuccess {
@@ -30,7 +29,7 @@ body {
     font-size: 90%;
     border-top: 5px dotted #ccc;
     text-align: center;
-    opacity: 50%;
+    opacity: 90%;
 }
 
 .legend {
@@ -38,28 +37,31 @@ body {
 }
 
 #formhome table {
-    clear: both;
     text-align: left;
     border-spacing: 8px;
-    margin: 30px 10px;
+    margin: 30px;
     min-height: 20px;
-    margin-left: 190px;
+    margin-left: 160px;
+    font-size: 20px;
 }
 
-.fieldset {
-    font-size: 150%;
-    padding: 10px;
-    font-family: sans-serif;
-    text-shadow: 0.8px 0.8px;
+.field{
+    height: 300px;
+    text-align: left;
+}
+
+#formsignup table{
+    border-spacing: 12px;
+}
+
+#formsignup table .buttons{
+    font-size: 20px;
 }
 
 .error{
     color: red;
 }
 
-#formhome table .buttons{
-    text-align: center;
-}
 
 .admin {
     text-align: right;
@@ -73,6 +75,11 @@ body {
 .rights{
     text-align: center;
     color: darkblue;
+}
+
+.buttons{
+    font-size: 20px;
+    mrgin: auto auto;
 }
 
 .main{
