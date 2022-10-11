@@ -1,0 +1,22 @@
+#{extends 'main.html' /}
+
+#{form @Application.save(Id), id:'formupdate'}
+
+<p>
+    <label for="opassword">Old Password: </label>
+    <input type="password" name="opassword" id="opassword" value="${params.opassword}" />
+    <span class="error">#{error 'opassword'/}</span>
+</p>
+
+<p>
+    <label for="npassword">New Password: </label>
+    <input type="password" name="npassword" id="npassword" value="${params.npassword}" />
+    <span class="error">#{error 'npassword'/}</span>
+</p>
+
+<p>
+    <input type="submit" value="Confirm">
+    <input type="reset" value="Cancel">
+</p>
+
+#{/form}

@@ -12,6 +12,8 @@ GET     /login/{email}                          Application.login
 DELETE  /delete/{email}                         Application.delete
 GET     /logout                                 Application.logout
 GET     /iterations                             Application.iterations
+GET     /update                                 Application.update
+PUT     /update/{Id}                            Application.save
 
 # Ignore favicon requests
 GET     /favicon.ico                            404

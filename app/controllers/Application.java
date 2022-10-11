@@ -6,7 +6,6 @@ import play.data.validation.Required;
 import play.libs.*;
 import play.mvc.*;
 import models.*;
-
 import java.util.List;
 
 
@@ -137,6 +136,32 @@ public class Application extends Controller
         }
 
         render("Application/Admin.html");
+    }
+
+    public static void update(Long Id)
+    {
+        render(Id);
+    }
+
+    public static void save(Long Id,
+                            @Required(message = "Enter old password") String opassword,
+                            @Required(message = "Enter new password") String npassword)
+    {
+        if (validation.hasErrors())
+        {
+            render( "Application/update.html", Id);
+        }
+        User user = User.findById(Id);
+        validation.equals(user.password, opassword).message("Old password is incorrect");
+        if (validation.hasErrors())
+        {
+            flash.error("Old password is incorrect");
+            render( "Application/update.html", Id);
+        }
+        user.password = npassword;
+        user.save();
+        flash.success("Your password is successfully updated.Please Login again.");
+        home();
     }
 
     public static void iterations()
