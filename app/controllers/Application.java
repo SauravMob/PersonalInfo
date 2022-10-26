@@ -30,6 +30,7 @@ public class Application extends Controller
             Long Id,
             @Required(message = "Type Your full name") String fullname,
             @Required(message = "Mention your gender") String Gender,
+            @Required(message = "Mention the continent") String continent,
             @Required(message = "Mention your Date of Birth") String DOB,
             @Required(message = "Email is required") String email,
             @MinSize(value = 5, message = "At least 5 character is required")
@@ -45,7 +46,7 @@ public class Application extends Controller
         {
             try
             {
-                User user = new User(Id, fullname, Gender, DOB, email, password);
+                User user = new User(Id, fullname, Gender, continent, DOB, email, password);
                 user.create();
                 flash.success("Welcome!! " + user.fullname);
                 home();

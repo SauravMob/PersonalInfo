@@ -15,6 +15,9 @@ GET     /iterations                             Application.iterations
 GET     /update                                 Application.update
 PUT     /update/{Id}                            Application.save
 
+GET     /Trie/autocomplete                      Trie.autocomplete
+GET     /Trie/view                              Trie.view
+
 # Ignore favicon requests
 GET     /favicon.ico                            404
 

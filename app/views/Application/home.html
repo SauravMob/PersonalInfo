@@ -8,7 +8,7 @@
       <label for="email">Email: </label>
     </td>
     <td>
-      <input type="email" name="email" id="email" value="${params.email}" />
+      <input type="email" name="email" id="email" value="${params.email}" placeholder="Type your Email"/>
       <span class="error">#{error 'email'/}</span>
     </td>
   </tr>
@@ -20,7 +20,7 @@
       <label for="password">Password: </label>
     </td>
     <td>
-      <input type="password" name="password" id="password" value="${params.password}" />
+      <input type="password" name="password" id="password" value="${params.password}" placeholder="Enter your Password" />
       <span class="error">#{error 'password'/}</span>
     </td>
   </tr>
@@ -41,7 +41,7 @@
       <label for="code">Verification: </label>
     </td>
     <td>
-      <input type="text" name="code" id="code" value="${params.code}" />
+      <input type="text" name="code" id="code" value="${params.code}" placeholder="Enter the code above" />
       <span class="error">#{error 'code'/}</span>
     </td>
     <td>
@@ -53,9 +53,9 @@
   <tr></tr>
 
   <tr>
-    <td class="buttons">
-      <input type="submit" value="Log In">
-      <input type="reset" value="Cancel">
+    <td>
+      <input type="submit" value="Log In" class="buttons">
+      <input type="reset" value="Cancel" class="buttons">
     </td>
   </tr>
 

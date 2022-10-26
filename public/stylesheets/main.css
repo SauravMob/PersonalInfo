@@ -2,10 +2,55 @@ html {
 	background-image: url("/public/images/tree.jpg");
 }
 
+input[type="text"] {
+    width : 180px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    background-color: #ffffff;
+    outline: none;
+    position:relative;
+    border:1px solid #979797;
+}
+
+input[type = "email"] {
+    width : 180px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    background-color: #ffffff;
+}
+
+input[type = "password"] {
+    width : 180px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    background-color: #ffffff;
+}
+
+input[type = "date"] {
+    width : 180px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    background-color: #ffffff;
+}
+
+input[type="radio"] {
+    border: none;
+    outline: none;
+    height: 20px;
+}
+
 body {
-    height: 520px;
-    width: 650px;
-    margin: 100px auto;
+    height: 650px;
+    width: 700px;
+    margin: 30px auto;
     font-size: 120%;
     background: radial-gradient(circle, #f869d5, #5650de);
     padding: 20px;
@@ -39,26 +84,40 @@ body {
 #formhome table {
     text-align: left;
     border-spacing: 8px;
-    margin: 30px;
+    margin: 60px;
     min-height: 20px;
     margin-left: 140px;
-    font-size: 15px;
+    font-size: 18px;
 }
 
-.field{
-    height: 300px;
+ul {
+    list-style: none;
+    opacity: 90%;
+}
+
+.list {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.list-items {
+    padding: 3px;
+}
+
+.list-items:hover {
+    background-color: #dddddd;
+}
+
+.field {
+    height: 400px;
     text-align: left;
 }
 
-#formsignup table{
+#formsignup table {
     border-spacing: 12px;
 }
 
-#formsignup table .buttons{
-    font-size: 20px;
-}
-
-.error{
+.error {
     color: red;
 }
 
@@ -67,27 +126,29 @@ body {
     text-align: right;
 }
 
-.users{
+.users {
     margin: 1px 50px;
     padding: 5px;
 }
 
-.rights{
+.rights {
     text-align: center;
     color: darkblue;
 }
 
-.buttons{
-    font-size: 20px;
-    mrgin: auto auto;
+.buttons {
+    font-size: 15px;
+    margin: 10px 5px;
+    border-radius: 8px;
+    border: none;
 }
 
-#formupdate{
+#formupdate {
     text-align: center;
     margin: 70px;
 }
 
-.main{
+.main {
     text-align: center;
 }
 

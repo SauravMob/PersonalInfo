@@ -22,6 +22,10 @@ public class User extends GenericModel
     public String gender;
 
     @Required
+    @Column(name = "Continent")
+    public String continent;
+
+    @Required
     @Column(name = "Birthdate")
     public String DOB;
 
@@ -34,10 +38,11 @@ public class User extends GenericModel
     @Column(name = "Password")
     public String password;
 
-    public User(Long Id, String fullname, String gender, String DOB, String email, String password)
+    public User(Long Id, String fullname, String gender, String continent, String DOB, String email, String password)
     {
         this.fullname = fullname;
         this.gender = gender;
+        this.continent=continent;
         this.DOB = DOB;
         this.email = email;
         this.password = password;

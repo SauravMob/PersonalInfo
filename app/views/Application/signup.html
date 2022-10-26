@@ -13,7 +13,7 @@
         <label for="fullname">Full Name: </label>
       </td>
       <td>
-        <input type="fullname" name="fullname" id="fullname" value="${params.fullname}" />
+        <input type="text" name="fullname" id="fullname" value="${params.fullname}" placeholder="Type your name" />
         <span class="error">#{error 'fullname'/}</span>
       </td>
     </tr>
@@ -29,12 +29,25 @@
         <span class="error">#{error 'Gender'/}</span>
       </td>
     </tr>
+
+    <tr>
+      <td>
+        <label for="continent">Continent: </label>
+      </td>
+      <td>
+        <input type="text" name="continent" id="continent" value="${params.continent}" placeholder="Continent you live in.." />
+        <ul class="list"></ul>
+        <script src="@{'/public/javascripts/js.js'}" type="text/javascript"></script>
+        <span class="error">#{error 'continent'/}</span>
+      </td>
+    </tr>
+
     <tr>
       <td>
         <label for="DOB">Date of Birth: </label>
       </td>
       <td>
-        <input type="date" name="DOB" id="DOB" value="${params.DOB}" />
+        <input type="date" name="DOB" id="DOB" value="${params.DOB}" placeholder="Type your birthdate" />
         <span class="error">#{error 'DOB'/}</span>
       </td>
     </tr>
@@ -44,7 +57,7 @@
         <label for="email"> Your Email: </label>
       </td>
       <td>
-        <input type="email" name="email" id="email" value="${params.email}" />
+        <input type="email" name="email" id="email" value="${params.email}" placeholder="Type your email"/>
         <span class="error">#{error 'email'/}</span>
       </td>
     </tr>
@@ -54,7 +67,7 @@
         <label for="password">Your Password: </label>
       </td>
       <td>
-        <input type="password" name="password" id="password" value="${params.password}" />
+        <input type="password" name="password" id="password" value="${params.password}" placeholder="Type your password" />
         <span class="error">#{error 'password'/}</span>
       </td>
     </tr>
@@ -64,18 +77,15 @@
         <label for="password2">Verify password: </label>
       </td>
       <td>
-        <input type="password" name="password2" id="password2" value="${params.password2}">
+        <input type="password" name="password2" id="password2" value="${params.password2}" placeholder="type your password again">
         <span class="error">#{error 'password2'/}</span>
       </td>
     </tr>
 
-    <tr></tr>
-    <tr></tr>
-
     <tr>
-      <td class="buttons">
-        <input type="submit" value="Submit">
-        <input type="reset" value="Cancel">
+      <td>
+        <input type="submit" value="Submit" class="buttons">
+        <input type="reset" value="Cancel" class="buttons">
       </td>
     </tr>
 </table>
